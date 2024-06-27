@@ -42,7 +42,7 @@ function selecaoDecolunas(val) {
 
     }else{
         colunas.forEach(item=>{
-            item.classList.remove('hide');
+            item.classList.add('hide');
         })
       
         for (let index = 0; index < colunaForm.length; index++) {
