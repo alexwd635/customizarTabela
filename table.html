@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#" onclick="abrirModal();" class="btn-selecao">Selecionar colunas</a>
+
+    <table id="table">
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+
+        <tr>
+            <td class="cl-1">cl-1</td>
+            <td class="cl-2">cl-2</td>
+            <td class="cl-3">cl-3</td>
+            <td class="cl-4">cl-4</td>
+            <td class="cl-5">cl-5</td>
+        </tr>
+    </table>
+
+    <div class="cont-modal animate__animated animate__fadeInDown" id="modal">
+        <a href="#" class="close" onclick="fecharModal();">X</a>
+        <header>
+            <h3>Customize  a tabela de dados</h3>
+            <p>Selecione abaixo as colunas que você deseja visualizar na tabela de dados.</p>
+        </header>
+    
+        <ul>
+            <li><input type="checkbox" name="coluna" value="cl-1"> Coluna 1</li>
+            <li><input type="checkbox" name="coluna" value="cl-2"> Coluna 2</li>
+            <li><input type="checkbox" name="coluna" value="cl-3"> Coluna 3</li>
+            <li><input type="checkbox" name="coluna" value="cl-4"> Coluna 4</li>
+            <li><input type="checkbox" name="coluna" value="cl-5"> Coluna 5</li>
+        </ul>
+    
+        <div class="actions">
+            <button onclick="selecaoDecolunas(1);" class="btn-pd btn-atualizar">Atualizar visualização</button>
+
+            <button onclick="selecaoDecolunas(2);" class="btn-pd btn-remover">Remover seleção de todos</button>
+        </div>
+    </div>
+    <div class="mascara" id="mascara"></div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
